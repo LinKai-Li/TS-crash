@@ -62,3 +62,18 @@ function addNum(x: number, y: number): number {
 function log(message: string | number): void {
   console.log(message);
 }
+
+// Interfaces
+interface UserInterface {
+  readonly id: number;
+  name: string;
+  age?: number;
+}
+
+const user1: UserInterface = {
+  id: 1,
+  name: "John",
+};
+
+type Point = number | string;
+const p1: Point = 1;
